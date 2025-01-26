@@ -1,0 +1,596 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* home page Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #555;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Featured Products Styles */
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.333% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-details h2 {
+  margin: 10px 0;
+}
+
+.product-details p {
+  margin: 10px 0;
+}
+
+.product-details .add-to-cart {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-details .add-to-cart:hover {
+  background-color: #555;
+}
+
+/* Promotions Styles */
+.promotions {
+  margin-top: 20px;
+}
+
+.promotion-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.promotion-banner:hover {
+  transform: scale(1.05);
+}
+
+.promotion-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.promotion-details {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.promotion-details h2 {
+  margin: 10px 0;
+}
+
+.promotion-details p {
+  margin: 10px 0;
+}
+
+.promotion-details .shop-now {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promotion-details .shop-now:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  .search-bar {
+      flex-direction: column;
+  }
+
+  .search-bar input {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+
+  .search-bar button {
+      width: 100%;
+      border-radius: 5px;
+  }
+
+  .featured-products, .promotions {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-item, .promotion-banner {
+      width: 100%;
+      max-width: 400px;
+  }
+}
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dashboard-metrics {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.metric {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.metric:hover {
+  transform: scale(1.05);
+}
+
+.metric h2 {
+  margin: 0 0 10px;
+}
+
+.metric p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Order Tracking Styles */
+.order-tracking {
+  margin-top: 20px;
+}
+
+.order-tracking form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-tracking label {
+  margin-bottom: 5px;
+}
+
+.order-tracking input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.order-tracking button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-tracking button:hover {
+  background-color: #555;
+}
+
+/* User Management Styles */
+.user-management {
+  margin-top: 20px;
+}
+
+.user-management button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-management button:hover {
+  background-color: #555;
+}
+
+/* Cart Styles */
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-items {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.cart-summary {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.cart-summary p {
+  font-size: 1.2em;
+}
+
+.checkout-button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #555;
+}
+
+/* Checkout Form Styles */
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.checkout form:hover {
+  transform: scale(1.02);
+}
+
+.checkout label {
+  margin-bottom: 5px;
+}
+
+.checkout input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkout button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  .checkout form {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+/* Account Styles */
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  text-align: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.1);
+}
+
+.profile-picture form {
+  margin-top: 10px;
+}
+
+.account-details, .account-settings, .order-history {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.account-details p, .account-settings p, .order-history p {
+  font-size: 1.2em;
+}
+
+.account-settings form {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-settings label {
+  margin-bottom: 5px;
+}
+
+.account-settings input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.account-settings button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account-settings button:hover {
+  background-color: #555;
+}
+
+/* Login and Register Styles */
+.login, .register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login form, .register form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login label, .register label {
+  margin-bottom: 5px;
+}
+
+.login input, .register input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login button, .register button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover, .register button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  .admin-dashboard, .cart, .account {
+      padding: 10px;
+  }
+
+  .dashboard-metrics {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .metric {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .cart-items, .cart-summary, .account-details, .account-settings, .order-history {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .login form, .register form {
+      width: 100%;
+      padding: 10px;
+  }
+}

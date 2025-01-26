@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="featured-products">
+            <h1>Featured Products</h1>
+            <div class="product-item">
+                <img src="path/to/featured-product-image.jpg" alt="Featured Product Image">
+                <div class="product-details">
+                    <h2>Featured Product Name</h2>
+                    <p>Description of the featured product goes here. It provides an overview of the product features and benefits.</p>
+                    <p><strong>Price:</strong> $50.00</p>
+                    <button class="add-to-cart" data-id="1" data-name="Featured Product Name" data-price="50.00" data-image="path/to/featured-product-image.jpg">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more featured products as needed -->
+        </section>
+        <section class="promotions">
+            <h1>Promotions</h1>
+            <div class="promotion-banner">
+                <img src="path/to/promotion-banner.jpg" alt="Promotion Banner">
+                <div class="promotion-details">
+                    <h2>Promotion Title</h2>
+                    <p>Details about the promotion go here. It provides information about the discount, offer period, and any terms and conditions.</p>
+                    <button class="shop-now">Shop Now</button>
+                </div>
+            </div>
+            <!-- Add more promotion banners as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 eCommerce Website</p>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

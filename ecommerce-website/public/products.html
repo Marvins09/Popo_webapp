@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - eCommerce Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-list">
+            <h1>Our Products</h1>
+            <div class="product-item">
+                <img src="path/to/product-image.jpg" alt="Product Image">
+                <div class="product-details">
+                    <h2>Product Name</h2>
+                    <p>Description of the product goes here. It provides an overview of the product features and benefits.</p>
+                    <p><strong>Price:</strong> $50.00</p>
+                    <button class="add-to-cart" data-id="1" data-name="Product Name" data-price="50.00" data-image="path/to/product-image.jpg">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more product items as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 eCommerce Website</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = {
+                    id: button.dataset.id,
+                    name: button.dataset.name,
+                    price: parseFloat(button.dataset.price),
+                    image: button.dataset.image,
+                    quantity: 1
+                };
+                addItemToCart(item);
+            });
+        });
+
+        function addItemToCart(item) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingItem = cart.find(cartItem => cartItem.id === item.id);
+            if (existingItem) {
+                existingItem.quantity += item.quantity;
+            } else {
+                cart.push(item);
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Item added to cart!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - eCommerce Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-dashboard">
+            <h1>Admin Dashboard</h1>
+            <div class="dashboard-metrics">
+                <div class="metric">
+                    <h2>Monthly Revenue</h2>
+                    <p id="monthly-revenue">KES 0</p>
+                </div>
+                <div class="metric">
+                    <h2>Successful Payments</h2>
+                    <p id="successful-payments">0</p>
+                </div>
+                <div class="metric">
+                    <h2>Total Orders</h2>
+                    <p id="total-orders">0</p>
+                </div>
+                <div class="metric">
+                    <h2>Pending Orders</h2>
+                    <p id="pending-orders">0</p>
+                </div>
+            </div>
+            <section class="order-tracking">
+                <h2>Track Orders</h2>
+                <form id="track-order-form">
+                    <label for="order-id">Order ID:</label>
+                    <input type="text" id="order-id" name="order-id" required>
+                    <button type="submit">Track Order</button>
+                </form>
+                <div id="order-status"></div>
+            </section>
+            <section class="user-management">
+                <h2>User Management</h2>
+                <button id="view-users">View All Users</button>
+                <div id="user-list"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 eCommerce Website</p>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>
